@@ -1,0 +1,32 @@
+{
+  "name": "conventional_commits",
+  "version": "1.0.0",
+  "description": "Test project to practice making conventional commits using several libreries that can help us ",
+  "main": "suma.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "conventional",
+    "commits",
+    "husky",
+    "eslint",
+    "jest",
+    "prettier",
+    "standard-version",
+    "lint-stage"
+  ],
+  "author": "Lester Potestad Berovides",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@commitlint/cli": "^19.5.0",
+    "@commitlint/config-conventional": "^19.5.0",
+    "eslint": "^9.10.0",
+    "husky": "^9.1.6",
+    "jest": "^29.7.0",
+    "lint-staged": "^15.2.10",
+    "prettier": "^3.3.3",
+    "standard-version": "^9.5.0"
+  }
+}
