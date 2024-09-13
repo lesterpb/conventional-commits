@@ -1,10 +1,14 @@
 {
   "name": "conventional_commits",
   "version": "1.0.0",
-  "description": "Test project to practice making conventional commits using several libreries that can help us ",
+  "description": "Test project to practice making conventional commits using several libraries that can help us",
   "main": "suma.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "lint": "eslint --fix",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,css,md}\"",
+    "prepare": "husky install",
+    "commitlint": "commitlint --edit"
   },
   "keywords": [
     "conventional",
@@ -22,11 +26,15 @@
   "devDependencies": {
     "@commitlint/cli": "^19.5.0",
     "@commitlint/config-conventional": "^19.5.0",
+    "@eslint/js": "^9.10.0",
     "eslint": "^9.10.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "globals": "^15.9.0",
     "husky": "^9.1.6",
     "jest": "^29.7.0",
     "lint-staged": "^15.2.10",
     "prettier": "^3.3.3",
-    "standard-version": "^9.5.0"
+    "prettier-eslint": "^16.3.0"
   }
 }
