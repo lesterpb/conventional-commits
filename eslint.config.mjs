@@ -16,6 +16,9 @@ export default [
     rules: {
       ...eslintConfigPrettier.rules, // Integra las reglas de eslint-config-prettier
       "prettier/prettier": "error", // Marca errores cuando no siga las reglas de Prettier
+			'no-mixed-spaces-and-tabs': 0, // Desactiva que se marque como error si se utiliza espacios en lugar de tabs
+			'no-console': 'error', // Marca como error si se dejan logs en el codigo
+			radix: 'off',
       //...eslintRecommendedRules, // Marca errores cuando no siga las reglas recomendadas de EsLint
       // Otras reglas de ESLint pueden ir aquí, estas de abajo las puse a modo de ejemplo pero no seria necesario ya que las reglas se estan declarando con Prettier que es mejor
       //semi: ["error", "always"], // Requiere el uso de punto y coma

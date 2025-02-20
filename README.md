@@ -126,6 +126,9 @@ El versionado que se asigna de forma automática por estas librerías se guía p
   "*.{js,jsx,ts,tsx}": ["eslint --fix"]
 }
 
+adicional a esto también se puede adicionar la configuracion descrita en este post en nuestro fichero .vscode/settings.json  
+    |- https://stackoverflow.com/questions/67702186/prettier-ask-me-to-replace-with
+
 15. Para configurar la librería **commitlint** y usar la configuración básica convencional, crearemos en la raíz de nuestro proyecto un archivo llamado **commitlint.conf.js** y escribiremos la siguiente linea:
 
     `module.exports = { extends: ['@commitlint/config-conventional'] };`
